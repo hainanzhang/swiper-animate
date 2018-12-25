@@ -1,0 +1,207 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.swiper-container{
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide{
+    position: relative;
+}
+
+/* 第一屏内容 */
+.swiper-slide:nth-child(1){
+    background: white;
+}
+.logo01{
+    width: 1.02rem;
+    height: .205rem;
+    position: absolute;
+    left: .1rem;;
+    top: .1rem;;
+    z-index: 2;
+}
+.bg01{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: .45rem;
+    z-index: 1;
+}
+.center01{
+    width: 1.79rem;
+    height: .695rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+}
+.center01 img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.bottom01{
+    height: .9rem;
+    width: 200%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+.bot01{
+    width: 100%;
+    height: 100%;
+}
+.bottom01 img{
+    float: left;
+    height: .9rem;
+    width: 50%;
+}
+.infini_left{
+    animation: infinileft 12s linear infinite ;
+}
+@keyframes infinileft{
+    0%{
+        right: 0;
+    }
+    100%{
+        right: -100%;
+    }
+}
+/* 第一屏内容结束 */
+
+/* 第二屏内容开始 */
+.swiper-slide:nth-child(2){
+    background: #fe657a;
+}
+.person02{
+    height: 4.47rem;
+    width: 2.74rem;
+    position: absolute;
+    right: 0;
+    top: .2rem;
+    z-index: 1;
+}
+.person02 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.person02 img:nth-child(2){
+    animation-direction: alternate;
+}
+.person02 img:nth-child(3){
+    animation-direction: alternate;
+}
+.left02{
+    width: .61rem;
+    height: 1.23rem;
+    position: absolute;
+    left: .1rem;
+    top: 0.1rem;
+    z-index: 2;
+}
+.left02 img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.right02{
+    height: 1.685rem;
+    width: .57rem;
+    position: absolute;
+    right: .1rem;
+    bottom: .1rem;
+    z-index: 2;
+}
+.right02 img{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.right02 img:nth-child(1){
+    width: .34rem;
+    height: .34rem;
+}
+.right02 img:nth-child(2){
+    width: .22rem;
+    height: 1.02rem;
+}
+.right02 img:nth-child(3){
+    width: 100%;
+    height: 100%;    
+}
+/* 第二屏内容结束 */
+
+/* 第三屏内容开始 */
+.swiper-slide:nth-child(3){
+    background: rgb(9, 190, 227);
+}
+.person03{
+    height: 4.45rem;
+    width: 2.64rem;
+    position: absolute;
+    left: 0;
+    top: .2rem;
+    z-index: 1;
+}
+.person03 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.person03 img:nth-child(3){
+    animation-direction: alternate;
+}
+.left03{
+    width: .575rem;
+    height: 1.685rem;
+    position: absolute;
+    left: .1rem;
+    top: .1rem;
+    z-index: 2;
+}
+.left03 img{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.left03 img:nth-child(1){
+    width: .34rem;
+    height: .34rem;
+}
+.left03 img:nth-child(2){
+    width: .21rem;
+    height: 1.02rem;
+}
+.left03 img:nth-child(3){
+    width: 100%;
+    height: 100%;    
+}
+.right03{
+    height: 1.16rem;
+    width: .6rem;
+    position: absolute;
+    right: .1rem;
+    bottom: .1rem;
+    z-index: 2;
+}
+.right03 img{
+    position: absolute;
+    left: 0;
+    top: 0;
+       width: 100%;
+    height: 100%;
+}
+/* 第三屏内容结束 */

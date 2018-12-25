@@ -1,0 +1,30 @@
+/*第五屏内容开始 */
+.swiper-slide:nth-child(5){
+    background: $p5;
+    .top05{
+        @include wh(1.3rem,1.6rem);
+        @include ablt(50%,.4rem);
+        text-align: center;
+        transform: translateX(-50%);
+        img:nth-child(1){
+            @include wh(100%,.8rem);
+        }
+        img:nth-child(2){
+            display: inline-block;
+            @include wh(.02rem,.35rem);
+            position: absolute;
+            bottom: 0;
+        }
+    }
+    .bottom05{
+        @include wh(100%,2rem);
+        @include ablt(0,50%);
+        z-index: 1;
+        img{
+            @include wh;
+            @include ablt;
+        }
+    }
+}
+
+/*第五屏内容结束 */

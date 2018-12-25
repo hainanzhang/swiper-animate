@@ -1,0 +1,29 @@
+/*第四屏内容开始 */
+.swiper-slide:nth-child(4){
+    background: $p4;
+    .top04{
+        @include wh(100%,4.5rem);
+        @include ablt;
+        z-index: 2;
+        img{
+            @include wh;
+            @include ablt;
+            &:nth-child(7),&:nth-child(8){
+                @include revplay;
+            }
+        }
+    }
+    .bottom04{
+        @include wh(.83rem,.3rem);
+        @include ablb(50%,.3rem);
+        transform: translateX(-50%);
+        z-index: 1;
+        img{
+            @include wh;
+            @include ablt;
+        }
+
+    }
+}
+
+/*第四屏内容结束 */

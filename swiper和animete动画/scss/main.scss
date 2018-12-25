@@ -1,0 +1,61 @@
+@mixin wh($w:100%,$h:100%) {
+    width: $w;
+    height: $h;
+}
+@mixin ablt($l:0,$t:0) {
+    position: absolute;
+    left: $l;
+    top: $t;
+}
+@mixin ablb($l:0,$b:0) {
+    position: absolute;
+    left: $l;
+    bottom: $b;
+}
+@mixin abrt($r:0,$t:0) {
+    position: absolute;
+    right: $r;
+    top: $t;
+}
+@mixin abrb($r:0,$b:0) {
+    position: absolute;
+    right: $r;
+    bottom: $b;
+}
+@mixin revplay {
+    animation-direction: alternate; 
+}
+$p4: #36a15c;
+$p5: #669cff;
+@import "_prev.scss";
+@import "_page04.scss";
+@import "_page05.scss";
+@import "_page06.scss";
+
+/* 滑动指示器和音频按钮样式开始*/
+.arrow{
+    @include wh(.21rem,.31rem);
+    @include ablb(50%,.05rem);
+    @include revplay;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+.arrow01{
+    @extend .arrow;
+    bottom: .4rem;
+}
+.audiobtn{
+    position: fixed;
+    right: .1rem;
+    top: .1rem;
+    @include wh(.4rem,.4rem);
+    z-index: 999;
+    // background: url(../images/musicBtn.png) center no-repeat;
+    background: url(../images/musicBtnOff.png) center no-repeat;
+    background-size: 100%;
+}
+.active{
+    background: url(../images/musicBtn.png) center no-repeat;
+    background-size: 100%;
+}
+/* 滑动指示器和音频按钮样式结束*/

@@ -1,0 +1,72 @@
+/*第六屏内容开始 */
+.swiper-slide:nth-child(6){
+    .logo03 {
+        width: 1.02rem;
+        height: .205rem;
+        position: absolute;
+        left: .1rem;
+        top: .1rem;
+        z-index: 2; 
+    }
+    .endtitle{
+        @include wh(2.17rem,.23rem);
+        @include ablt(50%,.7rem);
+        transform: translateX(-50%);
+    }
+    .search{
+        @include wh(2.24rem,.2rem);
+        @include ablt(50%,1.8rem);
+        transform: translateX(-50%);
+        border: 1px solid #d6d6d6;
+        box-sizing: border-box;
+        .back{
+            @include wh(.76rem,.12rem);
+            @include ablt(0,50%);
+            transform: translateY(-50%);
+            img,span{
+                @include wh;
+                @include ablt;
+            }
+            span{
+                display: block;
+                background: white;
+            }
+        }
+        .cl{
+            @include wh(.25rem,100%);
+            @include abrt;
+            background: #669cff;
+            img{
+                @include wh(.15rem,.15rem);
+                @include ablt(50%,50%);
+                transform: translate(-50%,-50%);
+            }
+        }
+    }
+    .btn{
+        @include wh(2.3rem,.57rem);
+        @include ablb(50%,.8rem);
+        transform: translateX(-50%);
+        >img{
+            @include wh(.73rem,.16rem);
+            @include ablt(50%,0);
+            transform: translateX(-50%);
+        }
+        a{
+            display: block;
+            @include wh(1.03rem,.27rem);
+            img{
+                @include wh;
+            }
+            &:nth-of-type(1){
+                @include ablb;
+            }
+            &:nth-of-type(2){
+                @include abrb;
+            }
+        }
+        
+    }
+}
+
+/*第六屏内容结束 */
